@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import movies from "./components/listor/movies";
+
+import { useState, useEffect } from "react";
+
+import { Home } from "./pages/Home";
+import { Movies } from "./pages/Movies";
+import { Book } from "./pages/Book";
+import { BookingInfo } from "./pages/BookingInfo";
+import { Header } from "./components/Header/Header";
 
 function App() {
+  useEffect(() => {
+    setState(movies);
+  }, []);
+
+  const [state, setState] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route path="/movies" exact>
+            <Movies />
+          </Route>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/book/:theMovie" exact>
+            <Book state={state} />
+          </Route>
+          <Route path="/bookinginfo/:theMovie/:time/:seats" exact>
+            <BookingInfo />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

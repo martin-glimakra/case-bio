@@ -1,0 +1,25 @@
+// Override default variables before the import
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./home.scss";
+@import "./header.scss";
+@import "./book.scss";
+@import "./stars.scss";
+
+.hidden {
+  visibility: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

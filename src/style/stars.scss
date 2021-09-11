@@ -1,0 +1,27 @@
+.stars {
+  display: flex;
+
+  div {
+    background-color: grey;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 4px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: var(--width-value);
+      background-color: rgb(134, 68, 68);
+    }
+  }
+
+  .filled {
+    background-color: yellow;
+  }
+
+  //   .last {
+  //     background-color: blue;
+  //   }
+}
