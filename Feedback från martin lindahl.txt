@@ -1,0 +1,9 @@
+Det fungerar.
+Du är godkänd
+
+Jag är inte imponerad av githistoriken då den bara har en commmit.
+Projektet är ostädat vilket är OK för en skoluppgift men om du tänker använda det som referensprojekt när du söker ett jobb 
+bör du städa det. Jag tror att du skulle kunna skriva mycket bättre React-kod nu om du väljer att skriva om det från början 
+
+T.ex har projektet nu:
+Felmeddelanden i consolen och http://localhost:3000/book/title7 genererar ett felmeddelande.

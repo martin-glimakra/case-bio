@@ -32,9 +32,12 @@ function App() {
           <Route path="/book/:theMovie" exact>
             <Book state={state} />
           </Route>
-          <Route path="/bookinginfo/:theMovie/:time/:seats" exact>
+          <Route path="/bookinginfo/:theMovie/:time/:seats" exact> 
             <BookingInfo />
           </Route>
+          {
+            // Här hadde det suttit fint med en <Route path="/" som fångar övriga routes>
+          } 
         </Switch>
       </Router>
     </div>

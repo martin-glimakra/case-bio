@@ -2,7 +2,7 @@ import { Header } from "../components/Header/Header";
 
 import { Link } from "react-router-dom";
 
-import { Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap"; //Bra att du har använt en externt hämtad komponent!
 
 export const Home = () => {
   return (

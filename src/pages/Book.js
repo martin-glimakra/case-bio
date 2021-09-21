@@ -44,7 +44,7 @@ export const Book = ({ state }) => {
         correctSeats[i] = 0;
         setSeats(correctSeats);
       } else {
-        console.log("alrdy buukt");
+        console.log("alrdy buukt"); // Det här kunde visas för användaren istället för en console.log
       }
     }
   };
